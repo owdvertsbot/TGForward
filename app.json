@@ -7,28 +7,23 @@
   "env": }
     "API_ID": {
       "description": "Your API_ID from https://my.telegram.org/apps ",
-      "value": "",
-      "required": true
+      "value": ""
     },
     "API_HASH": {
       "description": "Your API_HASH from https://my.telegram.org/apps",
-      "value": "",
-      "required": true
+      "value": ""
     },
     "STRING_SESSION": {
       "description": "Get your telethon string session from here https://replit.com/@AnjanaMa/TGStringSession",
-      "value": "",
-      "required": true
+      "value": ""
     },
     "FROM_CHANNEL_ID": {
       "description": "From which channel/group you want to forward files. Enter channel ID",
-      "value": "",
-      "required": true
+      "value": ""
     },
     "TO_CHANNEL_ID": {
       "description": "To which channel/group you want to forward files. Enter channel ID",
-      "value": "",
-      "required": true
+      "value": ""
     },
     "CUSTOM_CAPTION": {
       "description": "Enter your custom caption to send with files",
