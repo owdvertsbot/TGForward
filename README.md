@@ -3,13 +3,16 @@
 ### If You Try to Forward Very Large Number of Files Ur Telegram Account will be Banned. We cant Responsible for It. 😴
 
 ## Deploy to heroku
+
 <b>Click below button. ASAP</b>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Read this if you want to add custom caption to files.
+
 » Use only HTML tags
-» Do not use <br> for get new line. If you want to get new line just get new line by clicking ENTER button.
+
+» Do not use <code><br></code> for get new line. If you want to get new line just get new line by clicking ENTER button.
 
 ### <i>Examples</i>
 
