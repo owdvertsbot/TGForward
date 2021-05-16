@@ -3,7 +3,6 @@
   "description": "A script to forward large number of files to another telegram channel",
   "repository": "https://github.com/Anjana-Ma/ChannelForward",
   "logo": "https://telegra.ph/file/944a41db18eda321b075a.png",
-  "keywords": ["telegram", "forward", "forwardbot","telegram bot"],
   "env": }
     "API_ID": {
       "description": "Your API_ID from https://my.telegram.org/apps ",
@@ -29,9 +28,9 @@
       "description": "Enter your custom caption to send with files",
       "value": "",
       "required": false
-    }
-   },
-   "buildpacks": [
+    },
+   {
+  "buildpacks": [
     {
       "url": "heroku/python"
     }
