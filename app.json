@@ -28,7 +28,7 @@
       "description": "Enter your custom caption to send with files",
       "value": "",
       "required": false
-    },
+    }
    {
   "buildpacks": [
     {
