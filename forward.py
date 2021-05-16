@@ -26,27 +26,27 @@ print("Start auto forwarding....")
 async def forward():
   if file_type == "docs":
     print("Now forwarding only documents")
-	async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterDocument):
+    async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterDocument):
   elif file_type == "music":
-	print("Now forwarding only music")
-	async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterMusic):
+    print("Now forwarding only music")
+    async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterMusic):
   elif file_type == "videos":
-	print("Now forwarding only videos")
-	async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterVideo):
+    print("Now forwarding only videos")
+    async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterVideo):
   elif file_type == "photos":
-	print("Now forwarding only photos")
-	async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterPhotos):
+    print("Now forwarding only photos")
+    async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterPhotos):
   elif file_type == "all":
-	print("Now forwarding all messages")
-	async for msg in bot.iter_messages(from_chat, reverse=True):
+    print("Now forwarding all messages")
+    async for msg in bot.iter_messages(from_chat, reverse=True):
   else:
-	print("Now forwarding all messages")
-	async for msg in bot.iter_messages(from_chat, reverse=True):
-	  try:
-		await asyncio.sleep(2)
-		bot.parse_mode = 'html'
-		k = await bot.send_file(to_chat, file=msg.media, caption=custom_caption)
-	  except FloodError as e:
-		asyncio.sleep(e.seconds)
+    print("Now forwarding all messages")
+    async for msg in bot.iter_messages(from_chat, reverse=True):
+      try:
+        await asyncio.sleep(2)
+        bot.parse_mode = 'html'
+        k = await bot.send_file(to_chat, file=msg.media, caption=custom_caption)
+      except FloodError as e:
+        asyncio.sleep(e.seconds)
 bot.loop.run_until_complete(forward())
 bot.run_until_disconnected()
