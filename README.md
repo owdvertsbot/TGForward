@@ -12,7 +12,7 @@
 
 » Use only HTML tags
 
-» Do not use <code><br></code> for get new line. If you want to get new line just get new line by clicking ENTER button.
+» Do not use <br> for get new line. If you want to get new line just get new line by clicking ENTER button.
 
 ### <i>Examples</i>
 
