@@ -14,7 +14,9 @@
 ### <i>Examples</i>
 
 <i>Screen Shot of Heroku Var</i>
+
 [![Pic1](https://telegra.ph/file/d696aa4fdf938624eb7bf.png)](https://github.com/Anjana-Ma/ChannelForward#examples)
 
 <i>Screen Shot After Sending File</i>
+
 [![Pic2](https://telegra.ph/file/54ff54f80e8819a20d59a.png)](https://github.com/Anjana-Ma/ChannelForward#examples)
