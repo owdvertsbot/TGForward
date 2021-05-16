@@ -26,7 +26,7 @@ async def forward():
   async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterDocument):
     try:
       await asyncio.sleep(1)
-      k = await client.send_file(to_chat, file=msg.media, caption=custom_caption)
+      k = await bot.send_file(to_chat, file=msg.media, caption=custom_caption)
     except FloodError as e:
       asyncio.sleep(e.seconds)
 bot.loop.run_until_complete(forward())
