@@ -6,7 +6,7 @@
 import asyncio
 from telethon import TelegramClient
 from telethon.sessions import StringSession
-from telethon.tl.types import InputMessagesFilterDocument
+from telethon.tl.types import InputMessagesFilterDocument, InputMessagesFilterMusic, InputMessagesFilterVideo, InputMessagesFilterPhotos
 from telethon.errors import FloodError
 from vars import config
 
@@ -15,6 +15,7 @@ api_hash = config.API_HASH
 from_chat = config.FROM_CHANNEL_ID
 to_chat = config.TO_CHANNEL_ID
 custom_caption = config.CUSTOM_CAPTION
+file_type = config.FILE_TYPE
 bot = TelegramClient(StringSession(config.STRING_SESSION), api_id, api_hash)
 
 bot.start()
@@ -23,12 +24,29 @@ print("Please wait starting forwarding")
 print("Start auto forwarding....")
 
 async def forward():
-  async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterDocument):
-    try:
-      await asyncio.sleep(2)
-      bot.parse_mode = 'html'
-      k = await bot.send_file(to_chat, file=msg.media, caption=custom_caption)
-    except FloodError as e:
-      asyncio.sleep(e.seconds)
+	if file_type == "docs":
+		print("Now forwarding only documents")
+		async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterDocument):
+	elif file_type == "music":
+		print("Now forwarding only music")
+		async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterMusic):
+	elif file_type == "videos":
+		print("Now forwarding only videos")
+		async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterVideo):
+	elif file_type == "photos":
+		print("Now forwarding only photos")
+		async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterPhotos):
+	elif file_type == "all":
+		print("Now forwarding all messages")
+		async for msg in bot.iter_messages(from_chat, reverse=True):
+	else:
+		print("Now forwarding all messages")
+		async for msg in bot.iter_messages(from_chat, reverse=True):
+			try:
+				await asyncio.sleep(2)
+				bot.parse_mode = 'html'
+				k = await bot.send_file(to_chat, file=msg.media, caption=custom_caption)
+			except FloodError as e:
+				asyncio.sleep(e.seconds)
 bot.loop.run_until_complete(forward())
 bot.run_until_disconnected()

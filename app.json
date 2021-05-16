@@ -23,6 +23,11 @@
          "required": true,
          "value": ""
       },
+      "FILE_TYPE": {
+         "description": "Enter file type you want to forward. (Files types = docs, music, videos, photos.)",
+         "required": false,
+         "value": ""
+      },
       "CUSTOM_CAPTION": {
          "description": "If you want to add custom thumbnail. You should read ReadMe.",
          "required": false,
