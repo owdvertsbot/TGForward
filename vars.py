@@ -1,13 +1,9 @@
 import os
-from dotenv import load_dotenv, find_dotenv
-
-load_dotenv(find_dotenv())
-
 
 class config(object):
-    API_ID = int(os.getenv("API_ID"))
-    API_HASH = os.getenv("API_HASH")
-    STRING_SESSION = os.getenv("STRING_SESSION")
-    FROM_CHANNEL_ID = os.getenv("FROM_CHANNEL_ID")
-    TO_CHANNEL_ID = os.getenv("TO_CHANNEL_ID")
-    CUSTOM_CAPTION = os.getenv("CUSTOM_CAPTION")
+    API_ID = int(os.environ.get("API_ID"))
+    API_HASH = os.environ.get("API_HASH")
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    FROM_CHANNEL_ID = os.environ.get("FROM_CHANNEL_ID", None)
+    TO_CHANNEL_ID = os.environ.get("TO_CHANNEL_ID", None)
+    CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
