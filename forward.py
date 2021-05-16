@@ -20,7 +20,7 @@ bot = TelegramClient(StringSession(config.STRING_SESSION), api_id, api_hash)
 bot.start()
 
 print("Please wait starting forwarding")
-print("Start auto forwarding from " + from_chat + " to " + to_chat)
+print("Start auto forwarding....")
 
 async def forward():
   async for msg in bot.iter_messages(from_chat, reverse=True, filter=InputMessagesFilterDocument):
