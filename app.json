@@ -1,38 +1,42 @@
 {
-  "name": "Channel Forward",
-  "description": "A script to forward large number of files to another telegram channel",
-  "repository": "https://github.com/Anjana-Ma/ChannelForward",
-  "logo": "https://telegra.ph/file/944a41db18eda321b075a.png",
-  "env": }
-    "API_ID": {
-      "description": "Your API_ID from https://my.telegram.org/apps ",
-      "value": ""
-    },
-    "API_HASH": {
-      "description": "Your API_HASH from https://my.telegram.org/apps",
-      "value": ""
-    },
-    "STRING_SESSION": {
-      "description": "Get your telethon string session from here https://replit.com/@AnjanaMa/TGStringSession",
-      "value": ""
-    },
-    "FROM_CHANNEL_ID": {
-      "description": "From which channel/group you want to forward files. Enter channel ID",
-      "value": ""
-    },
-    "TO_CHANNEL_ID": {
-      "description": "To which channel/group you want to forward files. Enter channel ID",
-      "value": ""
-    },
-    "CUSTOM_CAPTION": {
-      "description": "Enter your custom caption to send with files",
-      "value": "",
-      "required": false
-    }
-   {
-  "buildpacks": [
+      "name": "Channel Forward",
+      "description": "A script to forward large number of files to another telegram channel",
+      "logo": "https://telegra.ph/file/944a41db18eda321b075a.png",
+   "env": {
+      "API_ID": {
+         "description": "Get API_KEY from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "TO_CHANNEL_ID": {
+         "description": "To which channel/group you want to forward files. Enter channel ID",
+         "required": true,
+         "value": ""
+      },
+      "STRING_SESSION": {
+         "description": "Get your telethon string session from here https://replit.com/@AnjanaMa/TGStringSession",
+         "required": true,
+         "value": ""
+      },
+      "CUSTOM_CAPTION": {
+         "description": "Enter your custom caption to send with files",
+         "required": false,
+         "value": ""
+      },
+      "FROM_CHANNEL_ID": {
+         "description": "From which channel/group you want to forward files. Enter channel ID",
+         "required": true,
+         "value": ""
+      }
+   },
+   "repository": "https://github.com/Anjana-Ma/ChannelForward",
+   "buildpacks": [
     {
       "url": "heroku/python"
-    }
-  ]
+  }]
 }
