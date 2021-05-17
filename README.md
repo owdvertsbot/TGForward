@@ -1,6 +1,6 @@
 # ChannelForward
-### 😇 <i>This is a Script to Forward Large Number of Documents to Another Telegram Channel.</i>
-### If You Try to Forward Very Large Number of Files Ur Telegram Account will be Banned. We cant Responsible for It. 😴
+<h2>😇 <i>This is a Script to Forward Large Number of Documents to Another Telegram Channel.</i></h2>
+<h2>If You Try to Forward Very Large Number of Files Ur Telegram Account will be Banned. We cant Responsible for It. 😴</h2>
 
 ## Deploy to heroku
 
@@ -14,7 +14,7 @@
 
 » Do not use "BR" HTML tag to get new line. If you want to get new line just get new line by clicking ENTER button.
 
-<h4><i>Examples</i></h4>
+<h3><i>Examples</i></h3>
 
 <i>Screen Shot of Heroku Var</i>
 
