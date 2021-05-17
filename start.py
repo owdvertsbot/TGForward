@@ -3,6 +3,7 @@
 # @AmarnathCJD HE IS HELP ME TO MAKE THIS SCRIPT. 
 # ALRIGHTS RESERVED.
 
+import os
 import logging
 from telethon import TelegramClient
 from telethon.sessions import StringSession
@@ -14,6 +15,6 @@ AnjanaMa = Client('AnjanaMa',
                   api_id=Config.API_ID,
                   api_hash=Config.API_HASH,
                   bot_token=Config.BOT_TOKEN,
-                  root="plugins")
+                  plugins=dict(root="plugins"))
 
 AnjanaMa.run()
