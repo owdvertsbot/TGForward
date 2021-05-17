@@ -8,13 +8,13 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-## Read this if you want to add custom caption to files.
+## Custom captions to files
 
 » Use only HTML tags
 
 » Do not use "BR" HTML tag to get new line. If you want to get new line just get new line by clicking ENTER button.
 
-### <i>Examples</i>
+<h4><i>Examples</i></h4>
 
 <i>Screen Shot of Heroku Var</i>
 
