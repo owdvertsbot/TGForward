@@ -10,9 +10,10 @@ from config import heroku
 
 logging.basicConfig(level=logging.INFO)
 
-AnjanaMa = TelegramClient(StringSession(heroku.STRING_SESSION),
-                  				api_id=heroku.API_ID,
-                  				api_hash=heroku.API_HASH,
-                  				plugins=dict(root="plugins"))
+AnjanaMa = Client('AnjanaMa',
+                  api_id=Config.API_ID,
+                  api_hash=Config.API_HASH,
+                  bot_token=Config.BOT_TOKEN,
+                  plugins=dict(root="plugins"))
 
 AnjanaMa.run()
