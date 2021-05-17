@@ -1,10 +1,10 @@
 # ChannelForward
-<h2>😇 <i>This is a Script to Forward Large Number of Documents to Another Telegram Channel.</i></h2>
-<h2>If You Try to Forward Very Large Number of Files Ur Telegram Account will be Banned. We cant Responsible for It. 😴</h2>
+### 😇 <i>This is a Script to Forward Large Number of Documents to Another Telegram Channel.</i>
+### If You Try to Forward Very Large Number of Files Ur Telegram Account will be Banned. We cant Responsible for It. 😴
 
 ## Deploy to heroku
 
-<b>Click below button. ASAP</b>
+<i>Click below button. ASAP</i>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -14,7 +14,7 @@
 
 » Do not use "BR" HTML tag to get new line. If you want to get new line just get new line by clicking ENTER button.
 
-<h3><i>Examples</i></h3>
+### <i>Examples</i><
 
 <i>Screen Shot of Heroku Var</i>
 
