@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 
 AnjanaMa = TelegramClient(StringSession(heroku.STRING_SESSION),
                   				api_id=heroku.API_ID,
-                  				api_hash=heroku.API_HASH,
-                  				plugins=dict(root="plugins"))
+                  				api_hash=heroku.API_HASH)
 
-bot run until disc.forward
+AnjanaMa.start()
+AnjanaMa.loop.run_until_complete(forward())
