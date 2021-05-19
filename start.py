@@ -18,4 +18,4 @@ bot_token = config.BOT_TOKEN
 AnjanaMa = TelegramClient('AnjanaMa', api_id, api_hash).start(bot_token=bot_token)
 
 with AnjanaMa:
-		AnjanaMa.loop.run_until_complete(forward())
+    AnjanaMa.loop.run_until_complete(forward())
