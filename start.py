@@ -11,7 +11,7 @@ from plugins.forward import forward
 
 logging.basicConfig(level=logging.INFO)
 
-AnjanaMa = Client('AnjanaMa',
+AnjanaMa = TelegramClient('AnjanaMa',
                   api_id=Config.API_ID,
                   api_hash=Config.API_HASH,
                   bot_token=Config.BOT_TOKEN)
