@@ -8,13 +8,15 @@ import logging
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from config import heroku
+from plugins.forward import forward
 
 logging.basicConfig(level=logging.INFO)
 
-AnjanaMa = Client('AnjanaMa',
-                  api_id=Config.API_ID,
-                  api_hash=Config.API_HASH,
-                  bot_token=Config.BOT_TOKEN,
-                  plugins=dict(root="plugins"))
+api_id = heroku.API_ID
+api_hash = heroku.API_HASH
+bot_token = heroku.BOT_TOKEN
 
-AnjanaMa.run()
+AnjanaMa = TelegramClient('AnjanaMa', api_id, api_hash).start(bot_token=bot_token)
+
+with AnjanaMa:
+    AnjanaMa.loop.run_until_complete(forward())

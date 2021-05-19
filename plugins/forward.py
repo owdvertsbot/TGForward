@@ -35,10 +35,10 @@ async def forward():
     print("Now forwarding all messages")
   else:
     print("Now forwarding all messages")
-  async for msg in bot.iter_messages(from_chat, reverse=True, filter=mode):
+  async for msg in AnjanaMa.iter_messages(from_chat, reverse=True, filter=mode):
       try:
         await asyncio.sleep(2)
-        bot.parse_mode = 'html'
-        k = await bot.send_file(to_chat, file=msg.media, caption=custom_caption)
+        AnjanaMa.parse_mode = 'html'
+        k = await Anjanama.send_file(to_chat, file=msg.media, caption=custom_caption)
       except FloodError as e:
         asyncio.sleep(e.seconds)
