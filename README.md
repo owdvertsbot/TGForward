@@ -1,5 +1,5 @@
 # ChannelForward
-### 😇 <i>This is a Script to Forward Large Number of Documents to Another Telegram Channel.</i>
+### 😇 <i>This is a Script to Forward Large Number of Documents to Another Telegram Channel. Star එකක් දාල fork එකක් ගහපියව් 🥴</i>
 ### If You Try to Forward Very Large Number of Files Ur Telegram Account will be Banned. We cant Responsible for It. 😴
 
 ## Deploy to heroku
