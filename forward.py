@@ -5,6 +5,7 @@
 
 import asyncio
 from telethon import TelegramClient
+from telethon.sessions import StringSession
 from telethon.tl.types import InputMessagesFilterDocument, InputMessagesFilterMusic, InputMessagesFilterVideo, InputMessagesFilterPhotos
 from telethon.errors import FloodError
 from config import heroku
@@ -13,6 +14,9 @@ from_chat = heroku.FROM_CHANNEL_ID
 to_chat = heroku.TO_CHANNEL_ID
 custom_caption = heroku.CUSTOM_CAPTION
 file_type = heroku.FILE_TYPE
+
+bot = TelegramClient(StringSession(heroku.STRING_SESSION), api_id, api_hash)
+bot.start()
 
 print("Please wait starting forwarding")
 print("Start auto forwarding....")
@@ -42,3 +46,6 @@ async def forward():
         k = await bot.send_file(to_chat, file=msg.media, caption=custom_caption)
       except FloodError as e:
         asyncio.sleep(e.seconds)
+
+bot.loop.run_until_complete(forward())
+bot.run_until_disconnected()
