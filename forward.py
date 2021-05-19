@@ -14,6 +14,8 @@ from_chat = heroku.FROM_CHANNEL_ID
 to_chat = heroku.TO_CHANNEL_ID
 custom_caption = heroku.CUSTOM_CAPTION
 file_type = heroku.FILE_TYPE
+api_id = heroku.API_ID
+api_hash = heroku.API_HASH
 
 bot = TelegramClient(StringSession(heroku.STRING_SESSION), api_id, api_hash)
 bot.start()
