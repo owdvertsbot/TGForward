@@ -3,6 +3,18 @@
 ### 😇 <i>This is a Script to Forward Large Number of Files to Another Telegram Channel. Star එකක් දාල fork එකක් ගහපියව් 🥴</i>
 ### If You Try to Forward Very Large Number of Files Ur Telegram Account will be Banned. We cant Responsible for It. 😴
 
+## Special Features
+
+» Light weight
+
+» Easy to use
+
+» Remove forward tag
+
+» Custom captions
+
+» Heroku deployment
+
 ## Deploy to heroku
 
 <i>Click below button. ASAP</i>
@@ -15,7 +27,7 @@
 
 » Do not use "BR" HTML tag to get new line. If you want to get new line just get new line by clicking ENTER button.
 
-### <i>Examples</i><
+### <i>Examples</i>
 
 <i>Screen Shot of Heroku Var</i>
 
