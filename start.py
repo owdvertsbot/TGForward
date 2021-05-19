@@ -11,9 +11,9 @@ from plugins.forward import forward
 
 logging.basicConfig(level=logging.INFO)
 
-api_id = config.API_ID
-api_hash = config.API_HASH
-bot_token = config.BOT_TOKEN
+api_id = heroku.API_ID
+api_hash = heroku.API_HASH
+bot_token = heroku.BOT_TOKEN
 
 AnjanaMa = TelegramClient('AnjanaMa', api_id, api_hash).start(bot_token=bot_token)
 
